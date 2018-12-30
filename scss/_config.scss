@@ -1,9 +1,13 @@
+// Variables
 $primary-color: #444;
 $secondary-color: #bada55;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
 $background-opacity: 0.9;
+$profile-picture: url(../img/portrait.jpg);
+$profile-picture-sm: url(../img/portrait_small.jpg);
 
+// Mixins
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
