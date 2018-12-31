@@ -1,8 +1,14 @@
 // Wide Screens
 @include mediaXl {
+  .projects {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 // Desktop & Laptops
 @include mediaLg {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 // Tablets & Small Laptops
 @include mediaMd {
@@ -46,21 +52,16 @@
       "job3";
     grid-template-columns: 1fr;
   }
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 // Smartphones
 @include mediaSm {
-  main#home h1,
-  main#about h1 {
+  main#home h1 {
     margin-top: 10vh;
   }
-  main#about {
-    margin: 0;
-    padding: 0 15px 15px 15px;
-  }
-  main#about h1 {
-    font-size: 5rem;
-  }
-  .menu-btn {
-    margin-top: -50px;
+  .projects {
+    grid-template-columns: 1fr;
   }
 }
