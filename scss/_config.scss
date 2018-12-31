@@ -32,6 +32,15 @@ $profile-picture-sm: url(../img/portrait_small.jpg);
   }
 }
 
+// SEt Text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
 // Media Query Mixins
 @mixin mediaSm {
   @media all and (max-width: 425px) {
