@@ -1,5 +1,6 @@
 @import "config";
 @import "menu";
+@import "tooltip";
 
 * {
   box-sizing: border-box;
@@ -165,12 +166,14 @@ main {
   color: #333;
 }
 
+//Footer
 #main-footer {
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
   color: set-text-color($primary-color);
   height: 60px;
+  width: 100vw;
 }
 
 // All Media Queries

@@ -89,6 +89,26 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: dotted 1px #bada55; }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 300px;
+    color: #bada55;
+    background-color: #373737;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 5;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -150px; }
+  .tooltip:hover .tooltiptext {
+    visibility: visible; }
+
 * {
   box-sizing: border-box; }
 
@@ -233,7 +253,8 @@ main {
   padding: 1rem;
   background: #2b2b2b;
   color: #fff;
-  height: 60px; }
+  height: 60px;
+  width: 100vw; }
 
 @media all and (min-width: 1441px) {
   .projects {
@@ -273,7 +294,9 @@ main {
     grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .work-desc {
+    display: none; } }
 
 @media all and (max-width: 425px) {
   main#home h1 {
