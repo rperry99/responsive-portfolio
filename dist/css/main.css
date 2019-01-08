@@ -256,6 +256,9 @@ main {
   height: 60px;
   width: 100vw; }
 
+.txt-type > .txt {
+  border-right: solid 0.2rem #777; }
+
 @media all and (min-width: 1441px) {
   .projects {
     grid-template-columns: repeat(4, 1fr); } }

@@ -176,5 +176,10 @@ main {
   width: 100vw;
 }
 
+//Cursor for Typewrite effect
+.txt-type > .txt {
+  border-right: solid 0.2rem #777;
+}
+
 // All Media Queries
 @import "mobile";
