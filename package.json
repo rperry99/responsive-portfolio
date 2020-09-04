@@ -17,7 +17,7 @@
      },
      "homepage": "https://github.com/rperry99/responsive-portfolio#readme",
      "dependencies": {
-          "node-sass": "^4.11.0",
+          "node-sass": "^4.13.1",
           "sass": "^1.15.2"
      }
 }
